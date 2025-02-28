@@ -44,6 +44,7 @@ const AIHPProduceCTA = () => {
             
             <p className="mt-6 text-sm text-gray-600">
               しつこい勧誘は一切ありません。<br />
+              お気軽にご相談ください！<br />
             </p>
           </div>
         </div>

@@ -60,7 +60,7 @@ const ContactForm = () => {
         email: values.email,
         phone: values.phone ? `'${values.phone}` : "", // 電話番号の前にアポストロフィーを追加
         message: values.message,
-        service: "it_advisor_lp_higashi_v8_contact",
+        service: "ai-for-hp-hishiki-v4",
       };
 
       // Google App Scriptにデータを送信

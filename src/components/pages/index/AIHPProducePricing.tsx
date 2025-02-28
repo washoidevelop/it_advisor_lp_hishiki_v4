@@ -41,7 +41,7 @@ const AIHPProducePricing = () => {
                   <span className="text-2xl md:text-2xl text-black font-bold font-['LINESeedJP']">サポート費用</span>
                 </div>
                 <div className="mb-8">
-                  <span className="text-3xl md:text-4xl text-primary font-bold font-['LINESeedJP']">50,000円 / 月 〜</span>
+                  <span className="text-3xl md:text-4xl text-primary font-bold font-['LINESeedJP']">50,000円/月</span>
                 </div>
                 <p className="text-base text-gray-600 mb-4">オプションで毎月のサポート</p>
                 <p className="text-base text-gray-600">導入後も安心してAI活用</p>
