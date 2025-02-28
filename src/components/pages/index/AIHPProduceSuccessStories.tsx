@@ -21,16 +21,19 @@ const AIHPProduceSuccessStories = () => {
                 <br />
                 ・完成までトータル半年以上
                 <br />
+                <br />
                 という状況が常態化していました。
                 <br />
                 <br />
                 AI導入後
                 <br />
-                完成まで2週間
+                ・完成まで2週間
                 <br />
-                工数は1/3以下になり顧客とのやりとりも減少
+                ・工数は1/3以下
+                <br />
+                ・顧客とのやりとりも減少
                 <br /><br />
-                顧客満足度も上がり売上向上
+                顧客満足度も上がり売上向上につながりました。
               </p>
               
               <div className="flex justify-center md:justify-center mb-6">
