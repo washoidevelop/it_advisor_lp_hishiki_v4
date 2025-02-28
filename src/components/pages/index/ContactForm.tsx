@@ -77,6 +77,15 @@ const ContactForm = () => {
       );
 
       if (response) {
+        // Google広告のコンバージョントラッキング
+        if (typeof window.gtag_report_conversion === 'function') {
+          window.gtag_report_conversion();
+        } else if (window.gtag) {
+          window.gtag('event', 'conversion', {
+            'send_to': 'AW-16742506458/maANCI-fiqQaENq_ua8-'
+          });
+        }
+
         toast.success(
           "お問い合わせを受け付けました。担当者より連絡させていただきます。",
         );
