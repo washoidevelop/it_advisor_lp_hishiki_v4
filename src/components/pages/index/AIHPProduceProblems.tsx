@@ -32,13 +32,13 @@ const AIHPProduceProblems = () => {
     {
       title: "顧客とのやりとりが多い",
       description: "案件ごとの打ち合わせ準備で1日消える<br>修正に何回もやりとりが必要",
-      imageSrc: "/images/thinking_man.svg",
+      imageSrc: "/images/ai_meeting.png",
       imageAlt: "頭を抱えて悩むイメージ",
     },
     {
       title: "開発に時間がかかる",
       description: "細かい修正に数時間かかる<br>大きな変更があると3日以上かかる",
-      imageSrc: "/images/chart-line.svg",
+      imageSrc: "/images/thinking_man.svg",
       imageAlt: "大量の数字を見て焦るイメージ",
     },
     {

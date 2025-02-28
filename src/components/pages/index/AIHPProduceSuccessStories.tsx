@@ -41,12 +41,14 @@ const AIHPProduceSuccessStories = () => {
             </div>
             
             <div className="aspect-video relative">
-              <img
-                src="/images/ai_report.png"
-                alt="AIが分析するレポート画面"
+              <video
+                src="/images/develop_AI.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
                 className="w-full h-full object-cover rounded-lg"
               />
-              <div className="absolute inset-0 bg-primary/10 rounded-lg"></div>
             </div>
           </div>
         </div>

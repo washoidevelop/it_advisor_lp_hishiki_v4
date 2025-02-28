@@ -37,7 +37,7 @@ const AIHPProduceHero = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <Check className="text-primary w-6 h-6" strokeWidth={3.0} />
-                    <span className="text-left font-bold">LPの質も大幅UP</span>
+                    <span className="text-left font-bold">Webページの質も大幅UP</span>
                   </div>
                 </div>
 
