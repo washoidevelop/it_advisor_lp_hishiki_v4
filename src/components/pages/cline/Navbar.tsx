@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl mx-auto px-4 md:px-16 flex justify-between items-center">
         <div className="flex items-center">
           <button
-            onClick={() => navigateWithUtm("/")}
+            onClick={() => navigateWithUtm("/cline")}
             className="font-bold text-xl font-['LINESeedJP']"
           >
             株式会社Washoi
