@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -24,7 +25,7 @@ const formSchema = z.object({
   company: z.string().min(1, "会社名を入力してください"),
   email: z.string().email("正しいメールアドレスを入力してください"),
   phone: z.string(),
-  message: z.string().min(1, "お問い合わせ内容を入力してください"),
+  message: z.string(),
   privacy: z
     .boolean()
     .refine(
@@ -36,6 +37,19 @@ const formSchema = z.object({
 const ContactForm = () => {
   const navigateWithUtm = useUtmNavigation();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [serviceType, setServiceType] = useState("ai-for-hp-hishiki-v4");
+  const location = useLocation();
+  
+  useEffect(() => {
+    // URLパスに基づいてサービスタイプを設定
+    if (location.pathname.includes("/cline")) {
+      setServiceType("ai-for-hp-hishiki-v4-cline");
+    } else if (location.pathname === "/" || location.pathname === "/index") {
+      setServiceType("ai-for-hp-hishiki-v4-ai");
+    } else {
+      setServiceType("ai-for-hp-hishiki-v4");
+    }
+  }, [location.pathname]);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -60,7 +74,7 @@ const ContactForm = () => {
         email: values.email,
         phone: values.phone ? `'${values.phone}` : "", // 電話番号の前にアポストロフィーを追加
         message: values.message,
-        service: "ai-for-hp-hishiki-v4",
+        service: serviceType,
       };
 
       // Google App Scriptにデータを送信
@@ -87,7 +101,7 @@ const ContactForm = () => {
         }
 
         toast.success(
-          "お問い合わせを受け付けました。担当者より連絡させていただきます。",
+          "無料相談を受け付けました。担当者より連絡させていただきます。",
         );
 
         // フォームの入力値をリセット
@@ -221,9 +235,6 @@ const ContactForm = () => {
                       <FormLabel>
                         <span className="inline-flex gap-1 items-center">
                           お問い合わせ内容
-                          <span className="bg-primary text-[10px] text-white px-1 py-1 rounded">
-                            必須
-                          </span>
                         </span>
                       </FormLabel>
                       <FormControl>

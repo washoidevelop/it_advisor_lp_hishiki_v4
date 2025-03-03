@@ -1,9 +1,9 @@
 # ファイル、ディレクトリ定義
-- 要件定義ファイル：src/pages/index.md
-- ページ作成ディレクトリ：src/pages
-- ページ参考ファイル：src/pages/index.tsx
-- コンポーネント作成ディレクトリ：src/components/pages/index
-- コンポーネント参考ディレクトリ：src/components/pages/index
+- 要件定義ファイル：src/pages/cline/index.md
+- ページ作成ディレクトリ：src/pages/cline
+- ページ参考ファイル：src/pages/cline/index.tsx
+- コンポーネント作成ディレクトリ：src/components/pages/cline
+- コンポーネント参考ディレクトリ：src/components/pages/cline
 
 # 指示
 - {{要件定義ファイル}}に記載されている内容をもとに、ランディングページを作成してください

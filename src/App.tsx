@@ -11,6 +11,8 @@ import Contact from "./pages/Contact";
 import Message from "./pages/Message";
 import Report from "./pages/report";
 import LP1 from "./pages/lp1";
+import Cline from "./pages/cline";
+import ClineContact from "./pages/cline/contact";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/message" element={<Message />} />
           <Route path="/report" element={<Report />} />
           <Route path="/lp1" element={<LP1 />} />
+          <Route path="/cline" element={<Cline />} />
+          <Route path="/cline/contact" element={<ClineContact />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

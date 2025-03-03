@@ -14,7 +14,7 @@ const Footer = () => {
               株式会社Washoi
             </h2>
             <p className="text-base font-bold font-['LINESeedJP']">
-              HP制作会社特化のAI導入
+              HP制作会社特化のCline導入
             </p>
           </div>
           <div className="text-sm sm:text-[15px] space-y-1">
