@@ -92,12 +92,24 @@ const ContactForm = () => {
 
       if (response) {
         // Google広告のコンバージョントラッキング
-        if (typeof window.gtag_report_conversion === 'function') {
-          window.gtag_report_conversion();
-        } else if (window.gtag) {
-          window.gtag('event', 'conversion', {
-            'send_to': 'AW-16742506458/maANCI-fiqQaENq_ua8-'
-          });
+        if (location.pathname.includes("/cline")) {
+          // Clineのコンタクトページの場合
+          if (typeof window.gtag_report_conversion_cline_contact === 'function') {
+            window.gtag_report_conversion_cline_contact();
+          } else if (window.gtag) {
+            window.gtag('event', 'conversion', {
+              'send_to': 'AW-16742506458/_zjVCJmyoqUaENq_ua8-'
+            });
+          }
+        } else {
+          // 通常のコンタクトページの場合
+          if (typeof window.gtag_report_conversion_contact === 'function') {
+            window.gtag_report_conversion_contact();
+          } else if (window.gtag) {
+            window.gtag('event', 'conversion', {
+              'send_to': 'AW-16742506458/maANCI-fiqQaENq_ua8-'
+            });
+          }
         }
 
         toast.success(

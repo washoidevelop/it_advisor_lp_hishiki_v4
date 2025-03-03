@@ -7,7 +7,7 @@ const ClineContact = () => {
   useEffect(() => {
     // Google広告のコンバージョントラッキング
     if (window.gtag) {
-      window.gtag('event', 'conversion', {'send_to': 'AW-16742506458/hZTDCJKfiqQaENq_ua8-'});
+      window.gtag('event', 'conversion', {'send_to': 'AW-16742506458/TQpGCJyyoqUaENq_ua8-'});
     }
   }, []);
   return (

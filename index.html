@@ -24,20 +24,32 @@
       gtag('config', 'AW-16742506458');
     </script>
 
-    <!-- Event snippet for 自動化お届け便_無料相談フォーム送信 conversion page -->
+    <!-- Event snippet for AI for HP 送信 (1) conversion page -->
     <script>
-      function gtag_report_conversion(url) {
-        console.log('Google広告コンバージョン関数gtag_report_conversionが呼び出されました');
+      function gtag_report_conversion_contact(url) {
         var callback = function () {
-          console.log('Google広告コンバージョンのコールバックが実行されました');
           if (typeof(url) != 'undefined') {
             window.location = url;
           }
         };
         gtag('event', 'conversion', {
-            'send_to': 'AW-16742506458/p6aWCOWYnZ0aENq_ua8-',
-            'value': 100.0,
-            'currency': 'JPY',
+            'send_to': 'AW-16742506458/maANCI-fiqQaENq_ua8-',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>  
+
+    <!-- Event snippet for Cline for HP送信 conversion page -->
+    <script>
+      function gtag_report_conversion_cline_contact(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16742506458/_zjVCJmyoqUaENq_ua8-',
             'event_callback': callback
         });
         return false;
