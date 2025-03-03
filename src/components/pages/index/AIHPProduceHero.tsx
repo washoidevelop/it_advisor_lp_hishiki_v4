@@ -18,15 +18,10 @@ const AIHPProduceHero = () => {
                 <h1 className="mb-8 md:mb-16 mt-8">
                   <p className="text-center md:text-left text-4xl md:text-6xl mb-4 font-bold font-['LINESeedJP']">
                     <p className="mb-2 md:mb-4">AIで爆速Web制作</p>
-                    <p>最短1週間で導入</p>
-                  </p>
-                  <p className="text-center md:text-left text-lg md:text-2xl text-gray-600 font-bold mt-4">
-                    導入サポートから運用まで支援<br />
-                    最新AIを徹底活用
                   </p>
                 </h1>
                 
-                <div className="text-base md:text-xl mb-12 leading-relaxed flex flex-col gap-3">
+                <div className="text-base md:text-3xl mb-12 leading-relaxed flex flex-col gap-3">
                   <div className="flex items-center gap-2">
                     <Check className="text-primary w-6 h-6" strokeWidth={3.0} />
                     <span className="text-left font-bold">最新AIツール導入</span>
